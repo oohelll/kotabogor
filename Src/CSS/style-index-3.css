@@ -1,0 +1,259 @@
+@import "style-index-2.css";
+@import "footer.css";
+
+* {
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+
+/* Bagian Nav */
+.text-title p {
+    font-size: 20px;
+}
+
+.text-title p:nth-child(2) {
+    margin-top: 15px;
+    font-size: 17px;
+}
+
+/* Bagian Main */
+.hotels p {
+    font-size: 0.9rem;
+}
+
+
+.text .btn {
+    background-color: #26a0da;
+    display: inline-block;
+    padding: 5px;
+    margin: 0px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+    font-size: 13px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.text a {
+    color: white;
+}
+
+.text .btn:hover {
+    background-color: #1a7199;
+    transition: 0.5s;
+}
+
+/* Media Queries */
+@media screen and (max-width:1100px) {
+    nav {
+        height: 10vh;
+    }
+
+    .hotels p {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width:962px) {
+    .text-title p {
+        font-size: 17px;
+    }
+
+    .hotels {
+        margin: 0px 3% 20px 3%;
+    }
+
+    .hotels img {
+        width: 280px;
+    }
+
+    .hotels p {
+        font-size: 0.7rem;
+    }
+
+    .text .btn {
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .text-title p {
+        font-size: 16px;
+    }
+
+    .hotels img {
+        width: 250px;
+    }
+}
+
+@media screen and (max-width: 743px) {
+    .hotels img {
+        width: 260px;
+    }
+
+    .hotels {
+        margin: 0px 2% 20px 2%;
+        height: fit-content;
+    }
+
+    .hotels p {
+        font-size: 0.67em;
+    }
+
+    .text .btn {
+        margin-bottom: 10px;
+    }
+}
+
+@media screen and (max-width: 641px) {
+    .hotels img {
+        width: 245px;
+    }
+
+    .hotels p {
+        font-size: 0.64em;
+    }
+
+    .contact-list {
+        width: 100%;
+    }
+
+    .social-media {
+        margin-top: 20px;
+        width: 100%;
+    }
+
+    .image-media {
+        width: 4%;
+    }
+}
+
+@media screen and (max-width: 587px) {
+    .text-title p {
+        font-size: 19px;
+    }
+
+    .hotels {
+        flex-direction: column;
+        align-items: center;
+        margin: 0px 10% 20px 10%;
+    }
+
+    .hotels img {
+        width: 99%;
+        height: 280px;
+    }
+
+    .hotels p {
+        font-size: 0.8em;
+    }
+
+    .text .btn {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .text-title p {
+        font-size: 16px;
+        width: 85%;
+    }
+
+    .text-title p:nth-child(2) {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 460px){
+    .text-title p {
+        font-size: 15px;
+        width: 90%;
+    }
+
+    .text-title p:nth-child(2) {
+        font-size: 13px;
+    }
+
+    .hotels {
+        margin: 0px 3% 20px 3%;
+    }
+
+    .image-media {
+        width: 5%;
+    }
+
+    .made p {
+        font-size: 16px;
+    }
+
+    .contact-list h5, .social-media h5 {
+        font-size: 18px;
+    }
+
+    .contact-list-list p, .social-media p {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .hotels p {
+        font-size: 0.7em;
+    }
+
+    .text .btn {
+        font-size: 11px;
+    }
+
+    .made p {
+        font-size: 14px;
+    }
+
+    .contact-list h5, .social-media h5 {
+        font-size: 16px;
+    }
+
+    .contact-list-list p, .social-media p {
+        font-size: 13px;
+    }
+
+    .image-media {
+        width: 6%;
+    }
+}
+
+@media screen and (max-width: 355px) {
+    .text-title p {
+        font-size: 14px;
+        width: 85%;
+    }
+
+    .text-title p:nth-child(2) {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .text-title p {
+        font-size: 13px;
+        width: 90%;
+    }
+
+    .text-title p:nth-child(2) {
+        font-size: 11px;
+    }
+
+    .hotels p {
+        font-size: 0.65em;
+    }
+}
+
+@media screen and (max-width: 280px) {
+    .hotels {
+        margin: 0px 3% 20px 3%;
+    }
+
+    .hotels img {
+        height: 60%;
+    }
+}
+

@@ -1,0 +1,600 @@
+@import "footer.css";
+
+html, body,
+ul, ol, li,
+h1, h2, h3, h4, h5, h6, p,
+form, input, div {
+	margin: 0;
+	padding: 0;
+}
+
+* {
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+
+/* Bagian Nav */
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: sans-serif;
+    height: 10vh;
+	color: rgb(219, 215, 215);
+    background-color: rgba(0, 0, 0, 0.432);
+    position: fixed;
+    /* top: 0; */
+    left: 0;
+    right: 0;
+    z-index: 99;
+}
+
+nav li {
+    font-size: 18px;
+    list-style: none;
+}
+
+.nav-links {
+    display: flex;
+    width: 40%;
+    justify-content: space-around;
+    box-sizing: border-box;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    display: inline-block;
+}
+
+.nav-links a:hover {
+    transform: scale(1.5);
+    transition: 0.5s;
+    display: inline-block;
+}
+
+.burger {
+    display: none;
+    cursor: pointer;
+}
+
+.burger div {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 5px;
+}
+
+header .jumbotron {
+	background: url(../Img/Bogor.jpg);
+	background-repeat: no-repeat;
+    height: 600px;
+    background-position-y: -100px;
+    text-align: center;
+}
+
+.jumbotron .text-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 400px;
+}
+
+.text-title h1 {
+    margin-bottom: 15px;
+    font-size: 35px;
+    color: rgb(250, 250, 250);
+}
+
+.text-title p {
+    font-size: 17px;
+    width: 60%;
+    color: rgb(252, 252, 252);
+}
+
+/* Main */
+.wisata-list, .hotel-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    top: -250px;
+    margin-bottom: -140px;
+}
+
+.wisata, .hotels {
+    display: flex;
+    margin: 0px 7% 20px 7%;
+    height: 240px;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.wisata img, .hotels img {
+    width: 300px;
+    padding: 3px;
+    border-radius: 10px;
+}
+
+.wisata p, .hotels p {
+    font-size: 0.8rem;
+    padding: 10px;
+    color: rgb(51, 51, 51);
+}
+
+.more {
+    display: flex;
+    justify-content: center;
+    margin: 15px 0px;
+    font-size: 10px;
+}
+
+.more h1{
+    cursor: pointer;
+}
+
+.more h1:hover, .more a:hover {
+    color: rgb(131, 131, 131);
+    transition: 0.5s;
+}
+
+.more a, .text a {
+    text-decoration: none;
+    color: black;
+}
+
+/* Media Queries */
+@media (min-width: 800px) and (max-width:962px) {
+    .text-title p {
+        font-size: 14px;
+        width: 60%;
+        color: rgb(252, 252, 252);
+    }
+
+    /* Main */
+    .wisata {
+        height: 230px;
+        margin: 0px 4% 20px 4%;
+    }
+
+    .wisata img {
+        width: 240px;
+    }
+
+    .wisata p {
+        font-size: 10px;
+    }
+
+    /* Footer */
+    .made p {
+        font-size: 16px;
+    }
+
+    .contact-list h5 {
+        font-size: 19px;
+    }
+
+    .contact-list-list p {
+        font-size: 16px;
+    }
+
+    .social-media h5 {
+        font-size: 19px;
+    }
+
+    .social-media p {
+        font-size: 16px;
+    }
+}
+
+@media (min-width: 743px) and (max-width: 799px) {
+    .text-title p {
+        font-size: 14px;
+    }
+
+    /* Main */
+    .wisata {
+        height: 200px;
+        margin: 0px 4% 20px 4%;
+    }
+
+    .wisata img {
+        width: 230px;
+    }
+
+    .wisata p {
+        font-size: 9px;
+    }
+
+    /* Footer */
+    .made p {
+        font-size: 15px;
+    }
+
+    .contact-list h5 {
+        font-size: 18px;
+    }
+
+    .contact-list-list p {
+        font-size: 15px;
+    }
+
+    .social-media h5 {
+        font-size: 18px;
+    }
+
+    .social-media p {
+        font-size: 15px;
+    }
+}
+
+@media screen and (min-width: 641px) and (max-width: 742px) {
+    .text-title p {
+        font-size: 14px;
+        width: 75%;
+    }
+
+    /* Main */
+    .wisata {
+        height: 230px;
+        margin: 0px 3% 20px 3%;
+    }
+    
+    .wisata img {
+        width: 220px;
+    }
+
+    .wisata p {
+        font-size: 9px;
+    }
+
+    /* Footer */
+    .made p, .social-media p, .contact-list-list p {
+        font-size: 14px;
+    }
+
+    .contact-list h5, .social-media h5 {
+        font-size: 17px;
+    }
+}
+
+@media screen and (min-width: 587px) and (max-width:640px) {
+    .text-title p {
+        font-size: 14px;
+        width: 80%;
+    }
+
+    /* Main */
+    .wisata-list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .wisata {
+        height: auto;
+        margin: 0px 7% 20px 7%;
+        flex-direction: column;
+    }
+
+    .wisata img {
+        width: auto;
+        object-fit: cover;
+        height: 300px;
+        padding: 3px;
+    }
+
+    /* Footer */
+    .contact {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .contact-list {
+        width: 100%;
+    }
+
+    .social-media p, .contact-list-list p {
+        font-size: 15px;
+    }
+
+    .contact-list h5, .social-media h5 {
+        font-size: 20px;
+    }
+
+    .image-media {
+        width: 10%;
+    }
+}
+
+@media screen and (min-width: 550px) and (max-width: 586px) {
+    .nav-links {
+        position: absolute;
+		width: 100%;
+        right: 0px;
+        top: 10vh;
+        height: 10vh;
+        background-color: rgba(0, 0, 0, 0.432);
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+		justify-content: space-around;
+        transform: translateY(-200%);
+        transition: transform 0.5s ease-in;
+    }
+
+    .nav-links li {
+        opacity: 0;
+    }
+
+	.nav-links a {
+		font-size: 90%;
+	}
+
+    .burger {
+        display: block;
+		margin-right: -80%;
+    }
+
+    .nav-active {
+        transform: translateX(0%);
+    }
+
+    @keyframes navLinkFade {
+        from {
+            opacity: 0;
+            transform: translateX(50px);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateX(0px);
+        }
+    }
+
+    .text-title p {
+        font-size: 13px;
+        width: 90%;
+    }
+
+    /* Main */
+    .wisata-list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .wisata {
+        height: auto;
+        margin: 0px 7% 20px 7%;
+        flex-direction: column;
+    }
+
+    .wisata img {
+        width: auto;
+        object-fit: cover;
+        height: 300px;
+    }
+
+    .wisata p {
+        font-size: 0.7rem;
+    }
+
+    .contact {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .contact-list {
+        width: 100%;
+    }
+
+    .social-media p, .contact-list-list p {
+        font-size: 15px;
+    }
+
+    .contact-list h5, .social-media h5 {
+        font-size: 20px;
+    }
+
+    .image-media {
+        width: 10%;
+    }
+}
+
+@media screen and (max-width: 549px) {
+    .nav-links {
+        position: absolute;
+		width: 100%;
+        right: 0px;
+        top: 10vh;
+        height: 10vh;
+        background-color: rgba(0, 0, 0, 0.432);
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+		justify-content: space-around;
+        transform: translateY(-200%);
+        transition: transform 0.5s ease-in;
+    }
+
+    .nav-links li {
+        opacity: 0;
+    }
+
+	.nav-links a {
+		font-size: 90%;
+	}
+
+    .burger {
+        display: block;
+		margin-right: -80%;
+    }
+
+    .nav-active {
+        transform: translateX(0%);
+    }
+
+    @keyframes navLinkFade {
+        from {
+            opacity: 0;
+            transform: translateX(50px);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateX(0px);
+        }
+    }
+
+    .text-title p {
+        font-size: 12px;
+        width: 80%;
+    }
+
+    /* Main */
+    .wisata-list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .wisata {
+        height: auto;
+        margin: 0px 7% 20px 7%;
+        flex-direction: column;
+    }
+
+    .wisata img {
+        width: auto;
+        object-fit: cover;
+        height: 250px;
+    }
+
+    .wisata p {
+        font-size: 0.7rem;
+    }
+
+    .contact {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .contact-list {
+        width: 100%;
+    }
+
+    .social-media p, .contact-list-list p {
+        font-size: 15px;
+    }
+
+    .contact-list h5, .social-media h5 {
+        font-size: 20px;
+    }
+
+    .image-media {
+        width: 10%;
+    }
+}
+
+@media screen and (max-width: 460px){
+    .made p {
+        font-size: 15px;
+    }
+
+    .social-media p, .contact-list-list p {
+        font-size: 13px;
+    }
+
+    .contact-list h5, .social-media h5 {
+        font-size: 18px;
+    }
+
+    .image-media {
+        width: 10%;
+    }
+}
+
+@media screen and (max-width: 460px){
+    .image-media {
+        width: 8%;
+    }
+
+    .more {
+        font-size: 8px;
+    }
+
+    footer {
+        padding: 0px 0px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .wisata {
+        margin: 0px 3% 20px 3%;
+    }
+    
+    .image-media {
+        width: 10%;
+        margin: 10px 10px 0px 0px;
+    }
+
+    .social-media p, .contact-list-list p {
+        font-size: 12px;
+    }
+
+    .contact-list h5, .social-media h5 {
+        font-size: 17px;
+    }
+}
+
+@media screen and (max-width: 355px) {
+    .made p {
+        font-size: 13px;
+    }
+
+    .wisata img {
+        width: 98%;
+    }
+    
+    .wisata {
+        margin: 0px 5% 20px 5%;
+    }
+
+    .image-media {
+        width: 6%;
+    }
+
+    .social-media {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .image-media {
+        width: 6%;
+    }
+
+    .social-media {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 280px) {
+    footer {
+        padding: 0px 8px;
+    }
+
+    .image-media {
+        width: 7%;
+    }
+
+    .social-media {
+        width: 90%;
+    }
+}
